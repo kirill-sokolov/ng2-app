@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p>Car adding form:</p>
+      <hr>
+      <app-add-car></app-add-car>
+      <!--<app-add-car (onAddCar)="updateCarList($event)"></app-add-car>-->
+      <hr>
+    </div>
+
+    <div class="col-12">
+      <div class="list-group">
+        <app-car *ngFor="let car of cars" [car]="car"></app-car>
+        <!--<app-car class="list-group-item" *ngFor="let car of cars" [carItem]="car" [name]="car.name">-->
+          <!--<div class="alert alert-info">Sold Out!</div>-->
+          <!--<div>{{car.name}}</div>-->
+          <!--<p class="list-group-item-text" #carText>Year: "{{car.year}}"</p>-->
+        <!--</app-car>-->
+      </div>
+    </div>
+
+    <!--<div class="col-6">-->
+      <!--<app-switch></app-switch>-->
+    <!--</div>-->
+
+    <!--<ul>-->
+    <!--<li *ngFor="let car of cars; let index = index;">-->
+    <!--<div-->
+    <!--[ngStyle]="{backgroundColor: ((index + 1) % 2 === 0) ? 'red' : 'blue', color: '#ddd'}"-->
+    <!--[ngClass]="{'big-text': car.length > 4}">-->
+    <!--<b>{{index + 1}} - {{car}}</b>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;{{index}}&ndash;&gt;-->
+    <!--&lt;!&ndash;{{item.name}}&ndash;&gt;-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--<div class="col-12">-->
+    <!--<input type="text" class="form-control" #inputReference (keyup.enter)="onKeyUp(inputReference.value)">-->
+    <!--<input type="text" class="form-control" [(ngModel)]="inputText">-->
+    <!--<p>{{inputText}}</p>-->
+    <!--</div>-->
+  </div>
+</div>

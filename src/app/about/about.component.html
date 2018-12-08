@@ -1,0 +1,12 @@
+<p>
+  about works!<br>
+  <a href (click)="sendMeHome()"><strong>Take me back</strong></a>
+</p>
+
+<div class="container">
+  <div class="col">
+    <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
+      {{goal}}
+    </p>
+  </div>
+</div>
