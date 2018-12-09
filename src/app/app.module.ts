@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {DataService} from './services/data.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from '@angular/forms';
+import {ControlContainer, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
@@ -20,6 +20,7 @@ import {PowPipe} from './pipes/pow.pipe';
 import {CarFilterPipe} from './pipes/car-filter.pipe';
 import {ConsoleService} from "./services/console.service";
 import { MyFormsComponent } from './my-forms/my-forms.component';
+import { TemplateFormsComponent } from './template-forms/template-forms.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +36,14 @@ import { MyFormsComponent } from './my-forms/my-forms.component';
     PipesComponent,
     PowPipe,
     CarFilterPipe,
-    MyFormsComponent
+    MyFormsComponent,
+    TemplateFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   providers: [DataService, ConsoleService],
