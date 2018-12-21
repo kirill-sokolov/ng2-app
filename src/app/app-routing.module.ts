@@ -7,6 +7,7 @@ import {GoalsComponent} from "./goals/goals.component";
 import {PipesComponent} from "./pipes/pipes.component";
 import {MyFormsComponent} from "./my-forms/my-forms.component";
 import {TemplateFormsComponent} from "./template-forms/template-forms.component";
+import {MyHttpComponent} from "./my-http/my-http.component";
 
 const routes: Routes = [
   {
@@ -33,6 +34,9 @@ const routes: Routes = [
   }, {
     path: 'forms',
     component: MyFormsComponent
+  }, {
+    path: 'my-http',
+    component: MyHttpComponent
   }
 ];
 

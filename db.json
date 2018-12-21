@@ -1,0 +1,37 @@
+{
+  "title": {
+    "value": "Car Manager"
+  },
+  "cars": [
+    {
+      "color": "Yellow",
+      "name": "BMW",
+      "id": 1
+    },
+    {
+      "color": "",
+      "name": "Audi",
+      "id": 2
+    },
+    {
+      "color": "red",
+      "name": "Lada",
+      "id": 3
+    },
+    {
+      "color": "pink",
+      "name": "Woltsvagen",
+      "id": 4
+    },
+    {
+      "color": "green",
+      "name": "Opel",
+      "id": 5
+    },
+    {
+      "color": "gray",
+      "name": "Ferarri",
+      "id": 6
+    }
+  ]
+}

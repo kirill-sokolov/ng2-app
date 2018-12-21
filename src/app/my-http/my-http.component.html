@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-2">
+      <h2>{{appTitle | async}}</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="carName">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="carColor">
+      </div>
+      <button class="btn btn-success" (click)="addCar()">Add new car</button>
+    </div>
+  </div>
+
+  <hr class="col-sm-8 offset-2">
+
+  <div class="row">
+    <div class="col-sm-8 offset-2">
+      <button class="btn btn-primary" (click)="loadCars()">Загрузить машины</button>
+      <hr>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let car of cars">
+          <span class="badge badge-pill badge-info" [ngStyle]="{backgroundColor: car.color}">
+            {{car.id}}
+          </span>
+          {{car.name}}
+          ({{car.color}})
+          <span class="btn btn-sm btn-info" (click)="setNewColor(car)">Edit</span>
+          <span class="btn btn-sm btn-danger" (click)="deleteCar(car)">Delete</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

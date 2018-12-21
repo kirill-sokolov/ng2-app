@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {DataService} from './services/data.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {ControlContainer, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
@@ -19,8 +19,10 @@ import {PipesComponent} from './pipes/pipes.component';
 import {PowPipe} from './pipes/pow.pipe';
 import {CarFilterPipe} from './pipes/car-filter.pipe';
 import {ConsoleService} from "./services/console.service";
-import { MyFormsComponent } from './my-forms/my-forms.component';
-import { TemplateFormsComponent } from './template-forms/template-forms.component';
+import {MyFormsComponent} from './my-forms/my-forms.component';
+import {TemplateFormsComponent} from './template-forms/template-forms.component';
+import {MyHttpComponent} from './my-http/my-http.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
     PowPipe,
     CarFilterPipe,
     MyFormsComponent,
-    TemplateFormsComponent
+    TemplateFormsComponent,
+    MyHttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],

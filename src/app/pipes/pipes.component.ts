@@ -1,7 +1,6 @@
 // https://angular.io/api?query=pipe
 
 import {Component, OnInit} from '@angular/core';
-import 'rxjs/Rx';
 import {Observable} from 'rxjs/Observable';
 
 @Component({
